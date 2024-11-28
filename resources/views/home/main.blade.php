@@ -2,13 +2,13 @@
 
 @section('content')
     <!-- Hero Section -->
-   <section class="hero fade-in text-center">
-    <div class="hero-content">
-        <h1>Welcome to <span>Cafe Spasico</span></h1>
-        <p class="lead">Experience the Future of Coffee Culture</p>
-        <button class="btn btn-lg explore-btn">Explore Menu</button>
-    </div>
-    </section>
+    <section class="hero fade-in text-center">
+        <div class="hero-content">
+            <h1>Welcome to <span>Cafe Spasico</span></h1>
+            <p class="lead">Experience the Future of Coffee Culture</p>
+            <a href="{{ route('menu') }}" class="btn btn-lg explore-btn">Explore Menu</a>
+        </div>
+    </section>    
 
     <!-- About Section -->
     <section id="about" class="about-section py-5 text-center">
@@ -35,38 +35,44 @@
         </div>
     </section>
     
-    
-
     <!-- Menu Section -->
     <section class="menu-page py-5">
         <div class="container">
-            <h1 class="section-title text-center">Our Menu</h1>
-            <p class="section-desc text-center">Discover the perfect blend of flavors and artistry in every cup.</p>
+            <h1 class="section-title text-center text-white">Our Menu</h1>
+            <p class="section-desc text-center text-white">Discover the perfect blend of flavors and artistry in every cup.</p>
+            
             <div class="row mt-5">
                 <div class="col-md-4">
                     <div class="menu-card text-center">
                         <img src="/images/menu1.jpeg" class="img-fluid rounded-3" alt="Espresso">
-                        <h5 class="mt-3">Espresso</h5>
-                        <p>Rich and intense coffee experience.</p>
+                        <h5 class="mt-3 text-dark">Espresso</h5>
+                        <p class="text-dark">Rich and intense coffee experience.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="menu-card text-center">
                         <img src="/images/menu2.jpeg" class="img-fluid rounded-3" alt="Cappuccino">
-                        <h5 class="mt-3">Cappuccino</h5>
-                        <p>Balanced and creamy perfection.</p>
+                        <h5 class="mt-3 text-dark">Cappuccino</h5>
+                        <p class="text-dark">Balanced and creamy perfection.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="menu-card text-center">
                         <img src="/images/menu3.jpg" class="img-fluid rounded-3" alt="Latte">
-                        <h5 class="mt-3">Latte</h5>
-                        <p>Smooth and silky, perfect for any time.</p>
+                        <h5 class="mt-3 text-dark">Latte</h5>
+                        <p class="text-dark">Smooth and silky, perfect for any time.</p>
                     </div>
                 </div>
             </div>
+
+            <div class="text-center mt-4">
+                <a href="{{ route('menu') }}" class="btn futuristic-btn text-white">
+                    <i class="fas fa-utensils"></i> Explore Full Menu
+                </a>
+            </div>
         </div>
-    </section>   
+    </section>
+    
 
     <!-- Testimonial Section -->
     <section id="testimonials" class="testimonials-section py-5">

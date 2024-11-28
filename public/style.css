@@ -2,7 +2,8 @@
 body {
     background-color: #1a3c40;
     color: #f0f0f0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -25,10 +26,10 @@ body {
 
 /* Navbar styling */
 .custom-navbar {
-    background: linear-gradient(to right, #1a3c40, #2a5452);
-    padding: 1rem 2rem;
+    background: linear-gradient(to right, #1a3c40, #2c5364);
+    padding: 15px 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
+    transition: background 0.3s ease-in-out;
 }
 
 .custom-navbar .navbar-brand {
@@ -71,6 +72,8 @@ body {
     width: 100%;
     z-index: 999;
     animation: slideDown 0.5s ease;
+    background: linear-gradient(90deg, #1a3c40, #1a3c40);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 @keyframes slideDown {
     from {
@@ -351,7 +354,7 @@ section {
 
 /* About Page Section */
 .about-page {
-    background: linear-gradient(135deg,#1a3c40,#1a3c20); /* Futuristic gradient background */
+    background: linear-gradient(135deg,#1a3c40,#1a3c20);
     color: #fff;
     font-family: 'Roboto', sans-serif;
     padding-top: 50px;
@@ -532,10 +535,119 @@ section {
     z-index: 2;
 }
 
+/* Button Style */
+.futuristic-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #3c7a74, #2b5a56);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.futuristic-btn:hover {
+    color: #fff;
+    background: linear-gradient(90deg, #3c7a74, #2b5a56);
+    box-shadow: 0px 15px 20px rgba(13, 174, 107, 0.4);
+    transform: translateY(-5px);
+}
+
+.futuristic-btn i {
+    margin-right: 10px;
+    animation: icon-spin 1.5s linear infinite;
+}
+
+@keyframes icon-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f2b2f;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-page {
+    background: linear-gradient(120deg, #1a3c40, #0f2b2f);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.section-desc {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.menu-section {
+    margin-top: 50px;
+}
+
+.menu-category {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.menu-card {
+    background-color: #ffffff; /* Warna latar belakang kartu */
+    border-radius: 10px; /* Membuat sudut kartu membulat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk tampilan modern */
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px); /* Efek hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-img {
+    width: 100%; /* Mengisi lebar penuh kontainer */
+    height: 200px; /* Tinggi seragam */
+    object-fit: cover; /* Memastikan gambar terlihat penuh tanpa terdistorsi */
+    border-radius: 10px; /* Membulatkan sudut gambar sesuai kartu */
+}
+
+.menu-title {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1a3c40; /* Warna teks sesuai tema */
+}
+
+.menu-card:hover .menu-title {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
 /* Testimonial Section Styling */
-.testimonials-section {
-    background-color: #0f1e20;
-    padding: 5rem 0;
+.testimonials-page {
+       background: linear-gradient(135deg,#1a3c40,#1a3c20); /* Futuristic gradient background */
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 80px;
 }
 
 .testimonial-card {
@@ -569,7 +681,10 @@ section {
 /* Footer */
 .footer {
     background: linear-gradient(to right, #2a5452, #1a3c40);
-    color: #fff;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+
 }
 
 .footer p {
@@ -583,7 +698,12 @@ section {
 
 .footer .social-link:hover {
     color: #6fc3b8;
-    text-decoration: underline;
+    text-decoration: none;
+}
+
+.footer-text {
+    font-size: 0.85rem;
+    color: #ffffff;
 }
 
 /* Animations */

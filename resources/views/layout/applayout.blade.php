@@ -19,7 +19,7 @@
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="{{ route('home') }}">
                 <img src="{{ asset('images/logo.jpg') }}" alt="Cafe Spasico Logo" class="logo me-2">
-                <span>Cafe Spasico</span>
+                <span class="brand-name">Cafe Spasico</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -54,10 +54,25 @@
         <div class="container">
             <div class="d-flex flex-column align-items-center">
                 <img src="{{ asset('images/logo.jpg') }}" alt="Cafe Spasico Logo" class="footer-logo mb-3">
-                <p>
+                <p class="footer-text">
                     &copy; 2024 Cafe Spasico. All Rights Reserved. Follow us on 
-                    <a href="#" class="social-link">Instagram</a> and <a href="#" class="social-link">Facebook</a>.
-                </p>
+                    <a href="#" class="social-link">Instagram</a> and 
+                    <a href="#" class="social-link">Facebook</a>.
+                </p>                
+                <ul class="footer-links list-inline mt-3">
+                    <li class="list-inline-item">
+                        <a href="{{ route('about') }}">About</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="{{ route('menu') }}">Menu</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="{{ route('testimonials') }}">Testimonials</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="{{ route('contact') }}">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>
